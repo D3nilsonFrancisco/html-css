@@ -1,43 +1,56 @@
 @charset "UTF-8";
 
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 div.container{
+    width: 100vw;
+    height: 100vh;
     display: grid;
-    grid-template: repeat(13, 100px) / repeat(4, 1fr);
+    grid-template: 80px 40px 1fr 40px / 1fr 150px;
     gap: 5px;
 }
 
 div.topo{
-    background-color: red;
-    grid-area: 1 / 1 / 2 / 5;
+    background-color: lightgray;
+    border: 1px solid black;
+    grid-area: 1 / 1 / 2 / -1;
     text-align: center;
-    padding: 5px;
+    padding: 10px;
 }
 
 div.menu{
-    background-color: green;
-    grid-area: 2 / 1 / 2 / 5;
+    background-color: lightgray;
+     border: 1px solid black;
+    grid-area: 2 / 1 / 3 / -1;
     text-align: center;
-    padding: 5px;
+    padding: 10px;
 
 }
 
 div.principal{
-    background-color: blue;
-    grid-area: 3 / 1 / 9 / 4;
+   background-color: lightgray;
+    border: 1px solid black;
+    grid-area: 3 / 1 / -2 / -2;
     text-align: center;
-    padding: 5px;
+    padding: 10px;
 }
 
 div.secundario{
-    background-color: grey;
-    grid-area: 3 / 4 / 9 / 5;
+    background-color: lightgray;
+     border: 1px solid black;
+    grid-area: 3 / -2 / -2 / -1;
     text-align: center;
-    padding: 5px;
+    padding: 10px;
 }
 
 div.rodape{
-    background-color: blueviolet;
-    grid-area: 9 / 1 / 9 / 5;
+   background-color: lightgray;
+    border: 1px solid black;
+    grid-area: -2 / 1 / -1 / -1;
     text-align: center;
-    padding: 5px;
+    padding: 10px;
 }

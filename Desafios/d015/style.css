@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+div.container{
+    display: grid;
+    grid-template: repeat(13, 100px) / repeat(4, 1fr);
+    gap: 5px;
+}
+
+div.topo{
+    background-color: red;
+    grid-area: 1 / 1 / 2 / 5;
+    text-align: center;
+    padding: 5px;
+}
+
+div.menu{
+    background-color: green;
+    grid-area: 2 / 1 / 2 / 5;
+    text-align: center;
+    padding: 5px;
+
+}
+
+div.principal{
+    background-color: blue;
+    grid-area: 3 / 1 / 9 / 4;
+    text-align: center;
+    padding: 5px;
+}
+
+div.secundario{
+    background-color: grey;
+    grid-area: 3 / 4 / 9 / 5;
+    text-align: center;
+    padding: 5px;
+}
+
+div.rodape{
+    background-color: blueviolet;
+    grid-area: 9 / 1 / 9 / 5;
+    text-align: center;
+    padding: 5px;
+}
